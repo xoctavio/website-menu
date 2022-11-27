@@ -6,6 +6,7 @@
 
 body {
  background-color: #18181b;
+ overflow: hidden;
 }
 
 #menu {
@@ -16,6 +17,8 @@ body {
 
 #menu-items {
  margin-left: 4rem;
+ position: relative;
+ z-index: 99;
 }
 
 #menu-items:hover > .menu-item{
@@ -36,4 +39,21 @@ body {
  padding: .25rem 0rem;
 
  transition: opacity 400ms ease;
+}
+
+#menu-background-image {
+ height: 100%;
+ width: 100%;
+ background-image: url("https://images.unsplash.com/photo-1574169208507-84376144848b?ixlib");
+ background-size: 101vmax;
+
+ position: absolute;
+ z-index: 1;
+
+ transition: all 800ms ease;
+}
+
+#menu-items:hover ~ #menu-background-image {
+ background-size: 100vmax;
+ opacity: .7;
 }
