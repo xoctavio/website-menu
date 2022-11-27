@@ -45,15 +45,34 @@ body {
  height: 100%;
  width: 100%;
  background-image: url("https://images.unsplash.com/photo-1574169208507-84376144848b?ixlib");
- background-size: 101vmax;
+ background-position: center 40%;
+ background-size: 110vmax;
 
  position: absolute;
  z-index: 1;
+ opacity: 0.5;
 
  transition: all 800ms ease;
 }
 
 #menu-items:hover ~ #menu-background-image {
  background-size: 100vmax;
- opacity: .7;
+ opacity: 0.9;
+}
+
+/* animation */
+#menu[data-active-index="0"]>#menu-background-image {
+ background-position: center 45%;
+}
+
+#menu[data-active-index="1"]>#menu-background-image {
+ background-position: center 50%;
+}
+
+#menu[data-active-index="2"]>#menu-background-image {
+ background-position: center 55%;
+}
+
+#menu[data-active-index="3"]>#menu-background-image {
+ background-position: center 60%;
 }
