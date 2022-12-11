@@ -1,5 +1,13 @@
 # website-menu
 
+- website menu layout
+
+deployed site:
+
+https://xoctavio.github.io/website-menu/
+
+# credits
+
 idea:
 
 http://dnacapital.com/
